@@ -23,7 +23,7 @@ function getValidatedName() {
       inputLabel: '',
       inputValidator: (value) => {
         if (!value) {
-          return 'Harap masukkan nama Anda';
+          return 'Jangan ga diisi ya cantik';
         } else {
           resolve(value);
         }
