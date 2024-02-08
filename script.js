@@ -18,7 +18,7 @@ footer.href = "https://www.instagram.com/hrdky_/";
 function getValidatedName() {
   return new Promise((resolve, reject) => {
     Swal.fire({
-      title: 'Masukkan nama Anda',
+      title: 'Pertama-tama masukin nama kamu dulu ya :*',
       input: 'text',
       inputLabel: '',
       inputValidator: (value) => {
