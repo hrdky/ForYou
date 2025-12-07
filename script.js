@@ -8,7 +8,7 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Mas";
+  sender = "Ky";
 }
 
 let footer = document.getElementById("credit");
@@ -409,3 +409,4 @@ function confetti() {
 
   if (!onlyOnKonami) poof();
 };
+
