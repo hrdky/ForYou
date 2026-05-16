@@ -8,7 +8,7 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Ky";
+  sender = "Mas";
 }
 
 let footer = document.getElementById("credit");
@@ -18,7 +18,7 @@ footer.href = "https://www.instagram.com/hrdky_/";
 function getValidatedName() {
   return new Promise((resolve, reject) => {
     Swal.fire({
-      title: 'Pertama-tama masukin nama kamu dulu ya :*',
+      title: 'Pertama-tama masukin nama adek dulu ya :*',
       input: 'text',
       inputLabel: '',
       inputValidator: (value) => {
@@ -33,7 +33,7 @@ function getValidatedName() {
 }
 
 function askQuestion() {
-  Swal.fire("Hai Sayang", "Aku ada pertanyaan nih buat kamu.", "question").then(() => {
+  Swal.fire("Hai Adek Sayang", "Mas ada pertanyaan nih buat adek.", "question").then(() => {
     Swal.fire("Jawab yang jujur ya!").then(() => {
       Swal.fire("Awas aja kalo boong!!", "", "error").then(() => {
         getValidatedName().then((name) => {
@@ -106,7 +106,7 @@ function askMissingLoveQuestion() {
         });
       });
     } else if (result.isDenied) {
-      Swal.fire('Jahat banget emang ga kangen sama pacar sendiri', '', 'error').then(() => {
+      Swal.fire('Jahat banget emang ga kangen sama mas :(', '', 'error').then(() => {
         Swal.fire('Yaudah deh bye!');
       });
     }
